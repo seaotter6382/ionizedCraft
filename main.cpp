@@ -2,7 +2,6 @@
 #include <OpenGL/gl.h>
 
 int main() {
-    std::cout << "ionizedCraft window when?" << std::endl;
+    std::cout << "this is super cool" << std::endl;
     return 0;
 }
-//wow this is cool comment
