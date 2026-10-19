@@ -4,20 +4,19 @@
 
 int main() {
     if (!glfwInit()) {
-        std::cerr << "Failed to initialize GLFW" << std::endl;
+        std::cerr << "GLFW failed" << std::endl;
         return -1;
     }
     std::cout << "this is super cool" << std::endl;
-    GLFWwindow* window = glfwCreateWindow(640, 480, "OpenGL C++ Window", NULL, NULL);
+    GLFWwindow* window = glfwCreateWindow(640, 480, "super cool window", NULL, NULL);
     if (!window) {
-        std::cerr << "Failed to create GLFW window" << std::endl;
+        std::cerr << "failed to create GLFW window" << std::endl;
         glfwTerminate();
         return -1;
     }
 
     glfwMakeContextCurrent(window);
 
-    // Main rendering loop
     while (!glfwWindowShouldClose(window)) {
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
