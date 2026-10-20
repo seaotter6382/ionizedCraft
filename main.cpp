@@ -7,7 +7,7 @@ int main() {
         std::cerr << "GLFW failed" << std::endl;
         return -1;
     }
-    std::cout << "this is super cool" << std::endl;
+    std::cout << "this is like as cool as that one time i did that one thing where the one thing happened" << std::endl;
     GLFWwindow* window = glfwCreateWindow(640, 480, "super cool window", NULL, NULL);
     if (!window) {
         std::cerr << "failed to create GLFW window" << std::endl;
